@@ -9,7 +9,7 @@
 
 ---
 
-## Software & Componentes
+## Componentes
 
 Estos son los programas principales que hacen que **darkB** funcione:
 
