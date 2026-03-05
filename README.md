@@ -4,9 +4,12 @@
 > [!TIP]
 > ¡Sube tus capturas de pantalla a una carpeta llamada `screenshots` y reemplaza estas líneas para que todos vean cómo luce darkB!
 
-## 📸 Previews
+## Previews
+
 
 ![Escritorio Principal](preview/cap1.png)
+![Escritorio Principal](preview/cap2.png)
+![Escritorio Principal](preview/cap3.png)
 
 ---
 
