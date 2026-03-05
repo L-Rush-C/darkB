@@ -4,8 +4,9 @@
 > [!TIP]
 > ¡Sube tus capturas de pantalla a una carpeta llamada `screenshots` y reemplaza estas líneas para que todos vean cómo luce darkB!
 
-*(Aquí aparecerá tu imagen cuando la subas al repo)*
-[![Desktop Preview](https://via.placeholder.com/800x450?text=Sube+tu+captura+aqui)](https://github.com/L-Rush-C/darkB/tree/main/preview)
+## 📸 Previews
+
+![Escritorio Principal](preview/cap1.png)
 
 ---
 
