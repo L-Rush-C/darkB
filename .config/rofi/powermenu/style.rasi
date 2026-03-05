@@ -1,0 +1,87 @@
+/*****----- Configuration -----*****/
+configuration {
+    show-icons:                 false;
+}
+
+/*****----- Global Properties -----*****/
+* {
+    font:                       "JetBrains Mono Nerd Font 10";
+    foreground:                 #FFFFFF;
+    background:                 #1A1A1A;
+    selected:                   #FFFFFF;
+    active:                     #000000;
+}
+
+/*****----- Main Window -----*****/
+window {
+    /* Ajuste para que sea horizontal como la foto */
+    width:                      900px;
+    location:                   center;
+    anchor:                     center;
+    fullscreen:                 false;
+    cursor:                     "default";
+    border-radius:              30px;
+    background-color:           rgba(0, 0, 0, 0.5);
+}
+
+/*****----- Main Box -----*****/
+mainbox {
+    enabled:                    true;
+    spacing:                    0px;
+    margin:                     0px;
+    padding:                    0px;
+    border:                     0px solid;
+    background-color:           transparent;
+    children:                   [ "listview" ]; /* Solo se ve la lista de iconos */
+}
+
+/*****----- Hidden Elements -----*****/
+inputbar, message, textbox {
+    enabled:                    false;
+}
+
+/*****----- Listview -----*****/
+listview {
+    enabled:                    true;
+    columns:                    4;      /* 6 columnas para una sola fila */
+    lines:                      1;
+    cycle:                      true;
+    dynamic:                    true;
+    scrollbar:                  false;
+    layout:                     vertical;
+    reverse:                    false;
+    fixed-height:               true;
+    fixed-columns:              true;
+    
+    spacing:                    15px;
+    margin:                     30px;
+    background-color:           transparent;
+    cursor:                     "default";
+}
+
+/*****----- Elements -----*****/
+element {
+    enabled:                    true;
+    spacing:                    0px;
+    margin:                     0px;
+    padding:                    40px 10px;
+    border:                     0px solid;
+    border-radius:              20px;
+    background-color:           @background;
+    text-color:                 @foreground;
+    cursor:                     pointer;
+}
+
+element selected.normal {
+    background-color:           @selected;
+    text-color:                 @active;
+}
+
+element-text {
+    font:                       "feather bold 32";
+    background-color:           transparent;
+    text-color:                 inherit;
+    cursor:                     inherit;
+    vertical-align:             0.5;
+    horizontal-align:           0.5;
+}

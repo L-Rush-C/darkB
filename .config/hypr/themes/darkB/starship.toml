@@ -1,0 +1,15 @@
+format = "$custom$directory$character"
+
+[custom.name]
+command = "echo nollt.sh"
+when = true
+style = "bold fg:#a0a7a0"
+
+[directory]
+style = "bold blue"
+truncation_length = 2
+truncation_symbol = "…/"
+
+[character]
+success_symbol = "❯"
+error_symbol = "❯"

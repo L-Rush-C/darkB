@@ -1,0 +1,94 @@
+* {
+    /* Color de fondo del cuadro principal (00 es invisible, 99 es semi) */
+    bg-window:           rgba(11, 11, 11, 0.828); 
+    /* Color del borde global */
+    border-theme:        #a0a7a0;
+    /* Texto */
+    fg-main:             #F0F2F0;
+    /* Transparente absoluto */
+    transparent:         rgba(0,0,0,0);
+}
+
+window {
+    width:               30%;
+    border:              2px;
+    border-color:        @bg-window;
+    border-radius:       8px;
+    background-color:    @bg-window;
+    padding:             15px;
+    font: "Minecraftia 10";
+}
+
+mainbox {
+    background-color:    @transparent;
+    children:            [ inputbar, listview ];
+}
+
+prompt {
+    background-color:    @transparent;
+    text-color:          @fg-main;
+    /* Espacio opcional después de la palabra 'drun' */
+    padding:             0px 5px 0px 0px;
+}
+
+entry {
+    background-color:    @transparent;
+    text-color:          @fg-main;
+    /* Esto separa el texto que escribes de la palabra 'drun' */
+    margin:              0px 0px 0px 15px; 
+    /* Elige 'placeholder' para que el texto guía también esté separado */
+    placeholder:         "Buscar...";
+}
+
+inputbar {
+    background-color:    @transparent;
+    children:            [ prompt, entry ];
+    padding:             0px 10px 0px 10px;
+    margin:              0px 0px 10px 0px;
+    /* Quitamos cualquier borde que genere esa línea */
+    border:              none;
+}
+
+/* Forzamos que la barra de búsqueda sea transparente */
+entry, prompt {
+    background-color:    @transparent;
+    text-color:          @fg-main;
+}
+
+listview {
+    background-color:    @transparent;
+    columns:             2;
+    lines:               4;
+    spacing:             0px;
+    scrollbar:           false;
+    /* ESTO QUITA LA LÍNEA PUNTEADA */
+    border:              0px;
+}
+
+element {
+    padding:             5px;
+    border-radius:       8px;
+    background-color:    @transparent;
+    text-color:          @fg-main;
+    border:              2px;
+    border-color:        @transparent;
+}
+
+/* 1. Limpiamos TODOS los estados posibles para que sean transparentes */
+element normal.normal,
+element normal.urgent,
+element normal.active,
+element alternate.normal,
+element alternate.urgent,
+element alternate.active {
+    background-color:    @transparent;
+    text-color:          @fg-main;
+}
+
+/* 2. Definimos la selección SOLO como un borde */
+element selected.normal,
+element selected.urgent,
+element selected.active {
+    background-color:    #232323de;
+    text-color:          @fg-main;
+}
