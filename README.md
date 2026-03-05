@@ -1,10 +1,6 @@
 # darkB - Hyprland Dotfiles
 ---
 ## Previews
-> [!TIP]
-> ¡Sube tus capturas de pantalla a una carpeta llamada `screenshots` y reemplaza estas líneas para que todos vean cómo luce darkB!
-
-## Previews
 
 
 ![Escritorio Principal](preview/cap1.png)
