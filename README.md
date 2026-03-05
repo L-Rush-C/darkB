@@ -15,7 +15,7 @@
 
 ## Componentes
 
-Estos son los programas principales que hacen que **darkB** funcione:
+Estos son los programas principales:
 
 * **WM:** [Hyprland](https://hyprland.org/) (Wayland Compositor)
 * **Barra:** `Waybar` (Configuración personalizada)
@@ -23,14 +23,9 @@ Estos son los programas principales que hacen que **darkB** funcione:
 * **Lanzador:** `Rofi` (Versión Wayland)
 * **Fondo de Pantalla:** `swww`
 * **Notificaciones:** `SwayNC`
-* **System Fetch:** `Fastfetch` (Configuración con .json)
+* **System Fetch:** `Fastfetch`
 
 ---
-
-## Instalación
-
-> [!WARNING]
-> Recuerda siempre hacer un respaldo de tus archivos actuales antes de sobrescribirlos.
 
 1. **Clona el repositorio:**
    ```bash
