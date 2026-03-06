@@ -8,6 +8,8 @@
 ![Escritorio Principal](preview/cap3.png)
 
 ---
+algunos componentes utilizan archivos con enlaces simbólicos para cambiar de un tema a otro con el script que está ubicado en .config/hypr/script/thememenu.sh
+---
 
 ## Componentes
 
