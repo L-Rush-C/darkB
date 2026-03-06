@@ -21,7 +21,7 @@
 
 ​**Wallpapers:** Actualiza el fondo mediante swww.
 
-**Swaync:** actualiza el .json/
+**Swaync:** Intercambia entre diferentes archivos CSS/JSON.
 
 ---
 
