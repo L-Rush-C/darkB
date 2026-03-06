@@ -44,6 +44,16 @@ Estos son los programas principales:
    git clone https://github.com/L-Rush-C/darkB.git
    cd darkB
 
+2. **Copia las configuraciones:**
+   ```bash
+   cp -r .config/* ~/.config/
+
+3. **Da permisos de ejecución a los scripts:**
+   ```bash
+   chmod +x ~/.config/hypr/scripts/*.sh
+
+
 ---
 
-el dotfile aún no está completo.
+> [!IMPORTANT]
+> **Estado del proyecto:** El dotfile aún está en desarrollo. Es posible que algunas rutas o archivos cambien en los próximos días.
