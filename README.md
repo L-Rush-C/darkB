@@ -13,7 +13,7 @@
 
 ​Este sistema utiliza un script personalizado en ~/.config/hypr/scripts/theme-menu.sh para alternar configuraciones.
 
-​Importante: El script gestiona enlaces simbólicos para los archivos de configuración de:
+​**Importante:** El script gestiona enlaces simbólicos para los archivos de configuración de:
 
 **​Waybar:** Intercambia entre diferentes archivos CSS/JSON.
 
