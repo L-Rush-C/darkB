@@ -43,3 +43,7 @@ Estos son los programas principales:
    ```bash
    git clone https://github.com/L-Rush-C/darkB.git
    cd darkB
+
+---
+
+el dotfile aún no está completo.
