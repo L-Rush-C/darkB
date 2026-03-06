@@ -16,7 +16,7 @@ window {
     border-radius:       8px;
     background-color:    @bg-window;
     padding:             15px;
-    font: "Minecraftia 10";
+    font: "Monocraft Nerd Font 10";
 }
 
 mainbox {
