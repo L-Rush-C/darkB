@@ -9,19 +9,30 @@
 
 ---
 
-## Gestión de Temas (Symlinks)
+## Gestión Dinámica de Temas (Symlinks)
 
-​Este sistema utiliza un script personalizado en ~/.config/hypr/scripts/theme-menu.sh para alternar configuraciones.
+Este repositorio utiliza un sistema de **enlaces simbólicos (symlinks)** gestionado por el script `~/.config/hypr/scripts/theme-menu.sh`. Esto permite cambiar el estilo visual de todo el sistema al instante mediante un menú de Rofi.
 
-​**Importante:** El script gestiona enlaces simbólicos para los archivos de configuración de:
+### ¿Cómo funciona el script?
+El script no copia archivos, sino que crea "punteros". Toma los archivos originales guardados en las carpetas de temas y los vincula a la ruta donde cada programa busca su configuración:
 
-**​Waybar:** Intercambia entre diferentes archivos CSS/JSON.
+| Componente | Archivo Original (Fuente) | Enlace Simbólico (Destino) |
+| :--- | :--- | :--- |
+| **Waybar** | `~/.config/waybar/themes/$THEME/` | `~/.config/waybar/config.jsonc` |
+| **Rofi** | `~/.config/rofi/themes/$THEME.rasi` | `~/.config/rofi/actual_theme.rasi` |
+| **Kitty** | `~/.config/hypr/themes/$THEME/kitty.conf` | `~/.config/kitty/kitty.conf` |
+| **Hyprland** | `~/.config/hypr/themes/$THEME/theme.conf` | `~/.config/hypr/actual_theme.conf` |
+| **SwayNC** | `~/.config/swaync/themes/$THEME/` | `~/.config/swaync/config.json` |
+| **Starship** | `~/.config/hypr/themes/$THEME/starship.toml` | `~/.config/starship.toml` |
 
-**​Rofi:** Cambia los colores del lanzador.
+---
 
-​**Wallpapers:** Actualiza el fondo mediante swww.
+### Requisitos para el cambio de tema
+Para que el script funcione correctamente sin errores, asegúrate de cumplir lo siguiente:
 
-**SwayNC:** Intercambia entre diferentes archivos CSS/JSON.
+1. **Wallpapers:** Los fondos deben estar en `~/Imágenes/wallpapers/` y tener el **mismo nombre** que el tema (ej: `darkB.jpg`).
+2. **Estructura:** No borres las carpetas dentro de `themes/`, ya que el script las busca para crear los enlaces.
+3. **Recarga:** El script reinicia automáticamente `Waybar` y `SwayNC` para aplicar los cambios sin cerrar sesión.
 
 ---
 
