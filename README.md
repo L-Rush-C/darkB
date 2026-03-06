@@ -9,7 +9,17 @@
 
 ---
 
-algunos componentes utilizan archivos con  enlaces simbólicos para cambiar de un tema a otro con el script que está ubicado en .config/hypr/scripts/theme-menu.sh
+## Gestión de Temas (Symlinks)
+
+​Este sistema utiliza un script personalizado en ~/.config/hypr/scripts/theme-menu.sh para alternar configuraciones.
+
+​Importante: El script gestiona enlaces simbólicos para los archivos de configuración de:
+
+**​Waybar:** Intercambia entre diferentes archivos CSS/JSON.
+
+**​Rofi:** Cambia los colores del lanzador.
+
+​**Wallpapers:** Actualiza el fondo mediante swww.
 
 ---
 
