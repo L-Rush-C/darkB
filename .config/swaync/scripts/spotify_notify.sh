@@ -19,10 +19,10 @@ COVER_URL=$(playerctl -p spotify metadata mpris:artUrl)
 [ -z "$TITLE" ] && exit 0
 
 # 3. CONTROL DE REPETICIÓN
-# Creamos un identificador único para la canción actual
+# Crear un identificador único para la canción actual
 CURRENT_ID="$TITLE - $ARTIST"
 
-# Leemos cuál fue la última canción anunciada
+# Lee cuál fue la última canción anunciada
 if [ -f "$LAST_SONG_FILE" ]; then
     LAST_ID=$(cat "$LAST_SONG_FILE")
 else
