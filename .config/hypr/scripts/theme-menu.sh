@@ -26,7 +26,7 @@ ln -sf ~/.config/hypr/themes/$THEME/theme.conf ~/.config/hypr/actual_theme.conf
 ln -sf ~/.config/swaync/themes/$THEME/config.json ~/.config/swaync/config.json
 ln -sf ~/.config/swaync/themes/$THEME/style.css ~/.config/swaync/style.css
 
-# Esto le dice a SwayNC que lea los nuevos archivos inmediatamente
+# SwayNC lee los nuevos archivos inmediatamente
 swaync-client -R
 swaync-client -rs
 
@@ -35,5 +35,5 @@ ln -sf ~/.config/hypr/themes/$THEME/starship.toml ~/.config/starship.toml
 
 swaync-client -R
 swaync-client -rs
-sleep 0.5  # Le damos medio segundo para respirar
+sleep 0.5 
 notify-send "Tema Aplicado" "Cambiado a <b>$THEME</b>"
