@@ -25,5 +25,5 @@ Estos son los programas principales:
 
 1. **Clona el repositorio:**
    ```bash
-   git clone [https://github.com/TU_USUARIO/darkB.git](https://github.com/TU_USUARIO/darkB.git)
+   git clone [https://github.com/L-Rush-C/darkB.git](https://github.com/L-Rush-C/darkB.git)
    cd darkB
