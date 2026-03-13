@@ -5,6 +5,7 @@
 
 ![Escritorio Principal](preview/cap1.png)
 ![Escritorio Principal](preview/cap2.png)
+![Escritorio Principal](preview/cap4.png)
 ![Escritorio Principal](preview/cap3.png)
 
 ---
